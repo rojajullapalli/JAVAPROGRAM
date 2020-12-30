@@ -1,0 +1,17 @@
+public class CalcInvest {
+
+		// TODO Auto-generated method stub
+		public static int calc_interest(int amt,int roi,int years)
+		{
+			int inverstrate=(((amt*roi)/100)*years);
+			//System.out.println("the invest rate is "+inverstrate);
+			return inverstrate;
+		}
+		public static void main(String[] args) {
+			int inverstrate=calc_interest(1000,10,10);
+			System.out.println("the invest rate is "+inverstrate);
+			
+
+	}
+
+}
