@@ -1,0 +1,16 @@
+public class AreaOfCircle {
+
+	public static void main(String[] args) {
+		double pi;
+		int r;
+		double  area=0;
+		pi=3.14;
+		r=7;
+		area=(pi*(r*r));
+		
+		System.out.println("area of circle is" + area);
+		// TODO Auto-generated method stub
+
+	}
+
+}
