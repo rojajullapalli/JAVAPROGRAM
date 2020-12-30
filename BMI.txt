@@ -1,0 +1,16 @@
+public class BMI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double weight;
+		double height;
+		double BMI;
+		int pounds=452;
+		int inch=72;
+		height=(inch/39.3);
+		weight=(pounds/2.20);
+		BMI=(weight/(height*height));
+		System.out.println("BMI is " +BMI);
+	}
+
+}
