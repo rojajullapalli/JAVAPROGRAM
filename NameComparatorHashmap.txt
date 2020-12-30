@@ -1,0 +1,12 @@
+import java.util.Comparator;
+
+public class Namecomparator implements Comparator<Student1> {
+
+	@Override
+	public int compare(Student1 s, Student1 s1) {
+		// TODO Auto-generated method stub
+		
+		return s.studname.compareTo(s1.studname);
+	}
+
+}
