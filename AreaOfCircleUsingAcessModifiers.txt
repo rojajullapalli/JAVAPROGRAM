@@ -1,0 +1,17 @@
+public class AreaCircle {
+
+	public static double area_cir(float r)
+	{
+		double area=((3.14)*(r*r));
+		//area=((3.14)*(r*r));
+		return area;
+        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double areaofcircle=area_cir(7);
+		System.out.println("the area of circle is " +areaofcircle);
+		
+
+	}
+
+}
