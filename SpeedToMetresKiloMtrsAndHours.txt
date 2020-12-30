@@ -1,0 +1,21 @@
+public class SpeedDistance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int dist,hr,min,sec;
+		dist=2500;
+		hr=5;
+		min=56;
+	    sec=23;
+	    double time,s1,s2,s3;
+	    time=((hr*3600)+(min*60)+sec);
+	    s1=(dist/time);
+	    s2=(s1*(1.2));
+	    s3=(s1*2.237);
+	    System.out.println("metre/sec" +s1);
+	    System.out.println( "km/hr" +s2);
+	    System.out.println("miles/hr" +s3);
+
+	}
+
+}
