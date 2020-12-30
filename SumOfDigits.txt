@@ -1,0 +1,15 @@
+public class SumDig {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=12345,n,sum=0;
+		while(num > 0)
+        {
+            n=num%10;
+            sum=sum+n;
+            num=num/10;
+        }
+		System.out.println("the sum is " +sum);
+	}
+
+}
