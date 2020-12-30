@@ -1,0 +1,16 @@
+public class AddFor1to100 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i,n,sum=0;
+		n=100;
+		for(i=1;i<=n;i++)
+		{
+			sum+=i;
+			//System.out.println("sum of 1 to 100" +sum);
+		}
+		System.out.println("sum of 1 to 100 is" +sum);
+
+	}
+
+}
