@@ -1,0 +1,22 @@
+public class Studmain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Student> stud=new ArrayList<Student>();
+		stud.add(new Student(100,"hel",77.5f));
+		stud.add(new Student(10,"abc",87.5f));
+		stud.add(new Student(12,"xyz",98.5f));
+		stud.add(new Student(9,"ddd",72.5f));
+		stud.add(new Student(18,"mmm",57.5f));
+		for(Student s:stud) {
+			System.out.println(s);
+		}
+		Collections.sort(stud);
+		System.out.println("after sorting");
+		for(Student s:stud) {
+			System.out.println(s);
+		}
+
+	}
+
+}
