@@ -1,0 +1,31 @@
+public class UpperToLow {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch='0';
+		int i=ch;
+		
+		if(i>=65 && i<=90)
+	    {
+	        System.out.println(" uppercase alphabet");
+	    }
+	    else if(i>=95 && i<=122)
+	    {
+	    	System.out.println(" lowercase alphabet");
+	    }
+		
+	    else if(ch >= '0' && ch <= '9')
+	    {
+	    	System.out.println(" number");
+	    }
+	    else 
+	    {
+	        System.out.println(" special character");
+	    }
+
+	    
+	    
+
+	}
+
+}
