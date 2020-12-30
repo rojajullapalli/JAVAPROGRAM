@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class First {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		HashMap<Integer,String> map=new HashMap<Integer,String>();
+		map.put(1, "prabha");
+		map.put(3, "roja");
+		map.put(2, "swathi");
+		map.put(4, "moni");
+		System.out.println(map);//print both key and values
+		System.out.println(map.size());//print the size
+		System.out.println(map.entrySet());//similar to map but it will print as a array
+		System.out.println(map.keySet());//return key 
+		System.out.println(map.values());//return values
+		System.out.println(map.get(3));//search for key 3 and print
+		System.out.println(map.remove(1));//remove the key 1 
+		System.out.println(map.containsKey(2));//check if key contains 2
+		System.out.println(map.containsValue("moni"));//check if value contains
+		map.clear();//clear the hashmap
+		System.out.println(map);
+
+	}
+
+}
