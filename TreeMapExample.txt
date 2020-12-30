@@ -1,0 +1,39 @@
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class TreeMapfirst {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeMap<Integer,String> map=new TreeMap<Integer,String>();
+		map.put(3, "prabha");
+		map.put(1, "roja");
+		map.put(4, "swathi");
+		map.put(2, "moni");
+		System.out.println(map);
+		TreeMap<String,String> map1=new TreeMap<String,String>(Collections.reverseOrder());
+		map1.put("b", "prabha");
+		map1.put("d", "roja");
+		map1.put("c", "swathi");
+		map1.put("a", "moni");
+		System.out.println(map1);
+		Scanner sc=new Scanner(System.in);
+		HashMap<Integer,String> map2=new HashMap<Integer,String>();
+		map2.put(1, "prabha");
+		map2.put(2, "roja");
+		map2.put(3, "swathi");
+		map2.put(4, "moni");
+		System.out.println(map2);
+		System.out.println("enter name");
+		String name=sc.next();
+		if(map2.containsValue(name)) 
+			System.out.println("already exsists");
+		else
+			map2.put(map2.size()+1, name);
+		System.out.println(map2);
+		sc.close();
+	}
+
+}
