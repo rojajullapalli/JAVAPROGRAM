@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+public class Percentagecomparator implements Comparator<Student1> {
+
+	@Override
+	public int compare(Student1 s, Student1 s1) {
+		// TODO Auto-generated method stub
+		if(s.studpercentage==s1.studpercentage) 
+			return 0;
+			else if(s.studpercentage>s1.studpercentage)
+				return -1;
+			else 
+				return 1;
+	}
+
+}
