@@ -1,0 +1,13 @@
+public class PrintAlphabets {
+	
+		public static void main(String[] args) {
+			 
+			char c;
+			c='a';
+			while(c<='z')
+			{
+				System.out.print(" " +c);
+				c++;
+			}
+		}
+}
