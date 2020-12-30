@@ -1,0 +1,16 @@
+public class AreaTri {
+
+	public static double area_tri(float l,float b)
+	{
+		//double area=((0.5)*(l*b));
+		return ((0.5)*(l*b));
+        }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double areaoftri=area_tri(12,7);
+		System.out.println("the area of triangle is " +areaoftri);
+
+	}
+
+}
