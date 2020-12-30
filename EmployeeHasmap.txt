@@ -1,0 +1,18 @@
+public class Employee {
+		public int empid;
+		public String empname;
+		public float empsalary;
+		public Employee(int empid, String empname, float empsalary) {
+			super();
+			this.empid = empid;
+			this.empname = empname;
+			this.empsalary = empsalary;
+		}
+		@Override
+		public String toString() {
+			return "Employee [empid=" + empid + ", empname=" + empname + ", empsalary=" + empsalary + "]";
+		}
+		
+
+
+}
