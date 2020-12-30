@@ -1,0 +1,16 @@
+public class Student1 {
+	public int rollno;
+	public String studname;
+	public float studpercentage;
+	public Student1(int rollno, String studname, float studpercentage) {
+		super();
+		this.rollno = rollno;
+		this.studname = studname;
+		this.studpercentage = studpercentage;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", studname=" + studname + ", studpercentage=" + studpercentage + "]";
+	}
+
+}
