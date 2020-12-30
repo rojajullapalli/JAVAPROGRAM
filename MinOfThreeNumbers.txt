@@ -1,0 +1,22 @@
+public class SmallNo {
+
+		public static  int find_min(int num1,int num2,int num3)
+		{
+			int min;
+			if(num1<num2 && num1<num3)
+				min=num1;
+			else if(num2<num1 && num2<num3)
+				min=num2;
+			else
+				min=num3;
+			return min;
+				
+		}
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			int number=find_min(17,16,8);
+			System.out.println("the smallest of three numbers " +number);
+
+	}
+
+}
