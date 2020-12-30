@@ -1,0 +1,45 @@
+package com.hashmap;
+
+public class Student implements Comparable<Student> {
+	private int rollno;
+	private String studname;
+	private float studpercentage;
+	public Student(int rollno, String studname, float studpercentage) {
+		super();
+		this.rollno = rollno;
+		this.studname = studname;
+		this.studpercentage = studpercentage;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", studname=" + studname + ", studpercentage=" + studpercentage + "]";
+	}
+	/* sort according to rollno
+	 * @Override
+	public int compareTo(Student s) {
+		// TODO Auto-generated method stub
+		if(rollno==s.rollno)
+		return 0;
+		else if(rollno>s.rollno)
+			return 1;
+		else 
+			return -1;
+	}*/
+	/* sort according to percentage
+	@Override
+	public int compareTo(Student s) {
+		// TODO Auto-generated method stub
+		if(studpercentage==s.studpercentage)
+		return 0;
+		else if(studpercentage>s.studpercentage)
+			return 1;
+		else 
+			return -1;
+	}*/
+	@Override
+	public int compareTo(Student s) {
+		// TODO Auto-generated method stub
+		return studname.compareTo(s.studname);
+	}
+
+}
