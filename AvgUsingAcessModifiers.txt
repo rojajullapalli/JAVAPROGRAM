@@ -1,0 +1,17 @@
+public class Average {
+	public static int calc_average(int no1,int no2,int no3)
+	{
+		int avg;
+		avg=(no1+no2+no3)/3;
+	
+			return avg;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int average=calc_average(10,10,10);
+		System.out.println("the average is "+average);
+
+	}
+
+}
