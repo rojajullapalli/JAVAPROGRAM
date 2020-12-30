@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class NewTwinPrime {
+	boolean isPrime(int n) 
+    {
+        int count=0;
+        for(int i=1; i<=n; i++)
+            {
+                if(n%i == 0)
+                    count++;
+            }
+        if(count == 2)
+            return true;
+         else
+            return false;
+    }
+	 public static void main(String args[])
+     {
+         NewTwinPrime n1 = new NewTwinPrime();
+         Scanner sc = new Scanner(System.in);
+          
+         System.out.print("Enter the lower range : ");
+         int low = sc.nextInt();
+         System.out.print("Enter the upper range : ");
+         int high = sc.nextInt();
+          
+         if(low>high)
+             System.out.println("Invalid Range !");
+         else
+         {
+             System.out.println("\nThe Twin Prime Numbers are : ");
+             for(int i=low; i<=(high-2); i++)
+             {
+                 if(n1.isPrime(i) == true && n1.isPrime(i+2) == true)
+                 {
+                     System.out.print("("+i+","+(i+2)+") ");
+                 }
+             }
+         }                 
+     }
+    }
+
+
+
