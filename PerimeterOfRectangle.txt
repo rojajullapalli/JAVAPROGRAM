@@ -1,0 +1,15 @@
+public class Rectangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int a,b,c,d;  
+		 int perimeter;
+		 a=c=5;
+		 b=d=4; 
+         perimeter=(a+b+c+d);  
+         System.out.println("Perimeter of Rectangle is: " +perimeter);  
+
+
+	}
+
+}
