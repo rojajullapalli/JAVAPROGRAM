@@ -1,0 +1,13 @@
+public class FahrenheitToCelsis {
+
+	public static void main(String[] args) {
+		float fah=212f;
+		float cel;
+		//fah=212;
+		cel=(((fah-32)*5)/9);
+		System.out.println("cel=" +cel);
+		// TODO Auto-generated method stub
+
+	}
+
+}
