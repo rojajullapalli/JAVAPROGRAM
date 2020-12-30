@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Student1main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			ArrayList<Student1> stud1=new ArrayList<Student1>();
+			stud1.add(new Student1(100,"hel",77.5f));
+			stud1.add(new Student1(10,"abc",87.5f));
+			stud1.add(new Student1(12,"xyz",98.5f));
+			stud1.add(new Student1(9,"ddd",72.5f));
+			stud1.add(new Student1(18,"mmm",57.5f));
+			for(Student1 s:stud1) {
+				System.out.println(s);
+			}
+			Collections.sort(stud1,new Namecomparator());
+			System.out.println("after sorting name comparator");
+			for(Student1 s:stud1) {
+				System.out.println(s);
+			}
+			Collections.sort(stud1,new Rollnocomparator());
+			System.out.println("after sorting roll no comparator");
+			for(Student1 s:stud1) {
+				System.out.println(s);
+			}
+			Collections.sort(stud1,new Percentagecomparator());
+			System.out.println("after sorting percentage comparator");
+			int rank=1;
+			for(Student1 s:stud1) {
+				//System.out.println(s);
+				System.out.println("student " +s.studname +" with " +(rank++) + " " + s.studpercentage);
+			}
+			
+		}
+
+
+	
+
+}
