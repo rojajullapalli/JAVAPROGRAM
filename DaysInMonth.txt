@@ -1,0 +1,51 @@
+public class MonthDay {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		i=1;
+		switch(i)
+		{
+		case 1:
+			System.out.println("month is jan days is 31");
+			break;
+		case 2:
+			System.out.println("month is feb days is 28");
+			break;
+		case 3:
+			System.out.println("month is march days is 31");
+			break;
+		case 4:
+			System.out.println("month is april days is 30");
+			break;
+		case 5:
+			System.out.println("month is may days is 31");
+			break;
+		case 6:
+			System.out.println("month is june days is 30");
+			break;
+		case 7:
+			System.out.println("month is july days is 31");
+			break;
+		case 8:
+			System.out.println("month is aug days is 31");
+			break;
+		case 9:
+			System.out.println("month is sept days is 30");
+			break;
+		case 10:
+			System.out.println("month is oct days is 31");
+			break;
+		case 11:
+			System.out.println("month is nov days is 30");
+			break;
+		case 12:
+			System.out.println("month is dec days is 31");
+			break;
+		default:
+				System.out.println("no month");
+		}
+
+	}
+
+}
