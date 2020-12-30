@@ -1,0 +1,17 @@
+public class AreaPentagon {
+
+	public static double area_pentagon(float s,float a)
+	{
+		double area=((5/2)*s*a);  
+		return area;
+        } 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double areaofpentagon=area_pentagon(5,6);
+		System.out.println("the area of pectagon is " +areaofpentagon);
+
+	}
+
+
+}
