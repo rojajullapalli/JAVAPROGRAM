@@ -1,0 +1,15 @@
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PermanentEmp p1=new PermanentEmp("mano",1234,35000,1500,2000);
+		System.out.println(p1);
+		System.out.println("totalsal is "+p1.totalsal());
+		Temporary t1=new Temporary("raj",1234,25000,1500,3);
+		System.out.println(t1);
+		System.out.println("totalsal is "+t1.totalsal());
+		System.out.println("tax of temporary employee is "+t1.calctax());
+		System.out.println("tax of permanent employee is "+p1.calctax());
+	}
+
+}
