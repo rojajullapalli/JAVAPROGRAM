@@ -1,0 +1,21 @@
+public class AgeExcMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age=-15;
+		try {
+			if(age<0) 
+				throw new AgeException("age connot negative");
+				else 
+					System.out.println("correct age..");
+			
+		}
+		catch(AgeException e) {
+			System.out.println(e);
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+
+	}
+
+}
