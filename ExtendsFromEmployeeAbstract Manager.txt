@@ -1,0 +1,13 @@
+import com.emp.Employee;
+public class Manager {
+	public int total_sal;
+	public int calc_tax()
+	{
+		Employee e1=new Employee();
+		Manager m1=new Manager();
+		int tax=(e1.sal*10)/100;
+		m1.total_sal=e1.sal+e1.ins-tax;
+		//int tax=(e1.sal*10)/100;
+		return tax;
+	}
+}
