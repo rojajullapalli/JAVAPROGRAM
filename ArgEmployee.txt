@@ -1,0 +1,24 @@
+public class ArgEmployee {
+	int empno;
+	String empname;
+    float empsal;	
+	 ArgEmployee(int empno, String empname, float empsal) {
+		this.empno = empno;
+		this.empname = empname; 
+		this.empsal = empsal;
+	}
+	public void printdetails()
+	{
+		System.out.println(empno + " " + empname +" " + empsal);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArgEmployee e1=new ArgEmployee(1234,"bob",15678f);
+		ArgEmployee e2=new ArgEmployee(2341,"pop",20000f);
+		ArgEmployee e3=new ArgEmployee(3421,"janu",70000f);
+		e1.printdetails();
+		e2.printdetails();
+		e3.printdetails();
+	}
+}
