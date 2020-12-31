@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class NoOfLetters {
+	public void isletters() {
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Enter the string to count the letters");
+		String str=s1.nextLine();
+		int count=0;
+		for(int i = 0; i < str.length(); i++) 
+        { 
+            char ch = str.charAt(i); 
+            if ((ch >= 'A' && ch <= 'Z' )||(ch >= 'a' && ch <= 'z')  ) 
+                count++; 
+        }
+		System.out.println("the total number of letters is " +count);
+		s1.close();
+	}
+	public static void main(String args[]) 
+    { 
+		NoOfLetters c1=new NoOfLetters();
+		c1.isletters();
+       
+    } 
+
+}
