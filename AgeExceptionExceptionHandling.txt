@@ -1,0 +1,14 @@
+public class AgeException extends Exception{
+		public AgeException(String s) {
+			super(s);
+}
+		@Override
+		public String getMessage() { 
+			return"age should be pos";
+		}
+		@Override
+		public String toString() {
+			return "AgeException []";
+		}
+	
+}
