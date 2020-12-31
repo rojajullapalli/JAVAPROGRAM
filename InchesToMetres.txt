@@ -1,0 +1,16 @@
+public class InchesToMetres {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int inches;
+		float metres;
+		inches=1000;
+		metres=(float)(inches*0.0254);
+		
+		System.out.println("metres=" +metres);
+		
+		
+
+	}
+
+}
