@@ -1,0 +1,28 @@
+public class Student extends Teacher implements principal,pt_teacher {
+	public String studname;
+	public int rollno;
+	public String details;
+	public Student(String name, String subject, String studname, int rollno, String details) {
+		super(name, subject);
+		this.studname = studname;
+		this.rollno = rollno;
+		this.details = details;
+	}
+	@Override
+	public String toString() {
+		return "Student [studname=" + studname + ", rollno=" + rollno + ", details=" + details + ", name=" + name
+				+ ", subject=" + subject + "]";
+	}
+	@Override
+	public void doexercise() {
+		System.out.println("they exercised");
+	}
+	@Override
+	public void scoregood() {
+		System.out.println("goodscore");
+	}
+	@Override
+	public void takeattendance() {
+		System.out.println("present");
+	}
+	
