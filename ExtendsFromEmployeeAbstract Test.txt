@@ -1,0 +1,16 @@
+import com.emp.Employee;
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1=new Employee();
+		Manager m1=new Manager();
+		System.out.println(e1.name);
+		System.out.println(+e1.sal);
+		System.out.println(+e1.ins);
+		System.out.println(+m1.calc_tax());
+		
+
+	}
+
+}
