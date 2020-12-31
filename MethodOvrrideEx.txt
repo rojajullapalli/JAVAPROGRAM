@@ -1,0 +1,25 @@
+public class MethodOverRide {
+	public int doadd(int n1,int n2) {
+		return n1+n2;
+	}
+	public float doadd(float n1,int n2) {
+		return n1+n2;
+	}
+	public int doadd(int n1,int n2,int n3) {
+		return n1+n2+n3;
+	}
+	public double doadd(float n1,double n2) {
+		return n1+n2;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MethodOverRide m1=new MethodOverRide();
+		System.out.println(m1.doadd(10, 2));
+		System.out.println(m1.doadd(10.2f, 2));
+		System.out.println(m1.doadd(10,2,5));
+		System.out.println(m1.doadd(10.22f, 23.5d));
+		
+
+	}
+
+}
