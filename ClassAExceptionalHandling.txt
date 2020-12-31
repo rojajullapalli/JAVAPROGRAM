@@ -1,0 +1,13 @@
+import java.io.FileNotFoundException;
+
+public class A {
+	public void openfile() throws FileNotFoundException{
+		String filename="bcd";
+		if(filename.equals("abc")) 
+			System.out.println("file found");
+			else
+				throw new FileNotFoundException();
+		}
+	}
+
+
