@@ -1,0 +1,14 @@
+public class Reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method
+		StringBuilder s1=new StringBuilder("hello");
+		        s1 = s1.reverse();
+		 
+		        System.out.println(s1);
+		    }      
+		        
+
+	}
+
+
