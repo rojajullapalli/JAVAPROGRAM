@@ -1,0 +1,24 @@
+public class Division {
+	public void dodivision() throws ArithmeticException{
+		int a=20,b=0;
+		if(b==0) 
+			throw new ArithmeticException();
+		else
+				System.out.println(a/b);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Division d=new Division();
+		try {
+			d.dodivision();
+		}
+		catch(ArithmeticException e) {
+			System.out.println("cannot divide by zero");
+			e.printStackTrace();
+		}
+
+	}
+
+}
