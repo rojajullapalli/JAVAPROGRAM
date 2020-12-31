@@ -1,0 +1,36 @@
+public class Concat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="chennai";
+		String a1="india";
+		String s2="chennai";
+		String s3="Chennai";
+		String s4="tamilnadu ";
+		String s5=new String("chennai");
+		if(s3==s5)
+	//whenever we are using == sign it will check the memory location not actual value
+			System.out.println("same");
+		else
+			System.out.println("not same");
+		if(s1.equals(s5))
+	//it will check actual value it will not check memory location
+			System.out.println("same");
+		else
+			System.out.println("not same");
+		if(s1.compareTo(s5)==0)
+			//0-same,+ve st1 is> st2,-ve str2> st1
+					System.out.println("same");
+				else
+					System.out.println("not same");
+		if(s1.compareToIgnoreCase(s3)==0)
+			//dont want case sensitive
+					System.out.println("same");
+				else
+					System.out.println("not same");
+
+
+
+	}
+
+}
