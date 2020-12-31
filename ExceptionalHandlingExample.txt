@@ -1,0 +1,21 @@
+public class Sample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=50;
+		try {
+			System.out.println("before division");
+			float ans=i/2;
+			System.out.println(ans);
+			System.out.println("good job....");
+		}
+		catch(ArithmeticException e) {
+			System.out.println("we cannot divide by 0.Try again");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		System.out.println("after division");
+
+	}
+
+}
