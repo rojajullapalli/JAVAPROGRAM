@@ -1,0 +1,32 @@
+public class Shape {
+	public int area(int r) {
+		return ((22/7)*r*r);
+	}
+	public int area(int l,int b) {
+		return l*b;
+	}
+	public double area(float b,float h) {
+		return (0.5*b*h);
+	
+	}
+	public double perimeter(float l,float w) {
+		return (2*l*w);
+	
+	}
+	public double perimeter(int s) {
+		return (s*s*s);
+	
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Shape s1=new Shape();
+		System.out.println("the area of circle is "+s1.area(7));
+		System.out.println("the area of rectangle "+s1.area(7,6));
+		System.out.println("the area of triangle "+s1.area(7.5f,6.22f));
+		System.out.println("the perimeter of rectangle "+s1.perimeter(1.22f, 7.6f));
+		System.out.println("the perimeter of triangle "+s1.perimeter(12));
+
+	}
+
+}
