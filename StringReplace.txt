@@ -1,0 +1,13 @@
+public class StrReplace {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String myStr = "java";
+		String s1 = myStr.replaceFirst("a", "2");
+		String s2=s1.replace('v', 'e');
+		String s3=s2.replace('a', 'e');
+		System.out.println(s3);
+
+	}
+
+}
