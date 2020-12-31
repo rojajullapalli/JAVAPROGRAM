@@ -1,0 +1,24 @@
+public class PermanentEmp extends Employee{
+	int insec;
+	int bonus;
+	public PermanentEmp(String empname, int empno, int salary, int insec, int bonus) {
+		super(empname, empno, salary);
+		this.insec = insec;
+		this.bonus = bonus;
+	}
+	public int totalsal() {
+		int calctotalsal=salary+insec+bonus;
+		return calctotalsal;
+	}
+	@Override
+	public String toString() {
+		return "PermanentEmp [insec=" + insec + ", bonus=" + bonus + ", empname=" + empname + ", empno=" + empno
+				+ ", salary=" + salary + "]";
+	}
+	@Override
+	public float calctax() {
+		//float x=totalsal();
+		return (float) (totalsal()*0.5);
+	}
+	
+}
