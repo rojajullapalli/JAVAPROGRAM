@@ -1,0 +1,9 @@
+import java.io.IOException;
+
+public class Demo {
+	public void dodivision() throws IOException{
+		System.out.println("all good");
+		throw new IOException(); 
+	}
+
+}
