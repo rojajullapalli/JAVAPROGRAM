@@ -1,0 +1,24 @@
+public class StateTaxableWorker extends TaxableWorker{
+	public double statetaxrate;
+	public String Statename;
+	public StateTaxableWorker(String name, double hourpay, double federaltaxrate, double grosspay, double statetaxrate,
+			String statename) {
+		super(name, hourpay, federaltaxrate, grosspay);
+		this.statetaxrate = statetaxrate;
+		this.Statename = statename;
+	}
+	@Override
+	public String toString() {
+		return "StateTaxableWorker [statetaxrate=" + statetaxrate + ", Statename=" + Statename + ", name=" + name
+				+ ", hourpay=" + hourpay + ", federaltaxrate=" + federaltaxrate + ", grosspay=" + grosspay + ", tax="
+				+ tax + "]";
+	}
+
+	@Override
+	public double grosspay() {
+		grosspay=hourpay*statetaxrate;
+		return  grosspay;
+	}
+	
+
+}
