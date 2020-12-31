@@ -1,0 +1,29 @@
+public class Father {
+	public String name;
+	private int debitcardno;
+	protected String property;
+	
+
+	public Father(String name, int debitcardno, String property) {
+		super();
+		this.name = name;
+		this.debitcardno = debitcardno;
+		this.property = property;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Father f1=new Father("hello",123456,"bungalow");
+		System.out.println(f1);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Father [name=" + name + ", debitcardno=" + debitcardno + ", property=" + property + "]";
+	}
+	
+	
+
+}
