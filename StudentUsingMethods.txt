@@ -1,0 +1,26 @@
+public class Student {
+	static int rollno=1001;
+	static String name="bob";
+	static int totalmarks=723;
+	public void calcper() {
+		int percent=totalmarks/8;
+		System.out.println(+percent);
+	}
+	public void printdetails() {
+		System.out.println(+rollno);
+		System.out.println(name);
+		//System.out.println(+totalmarks);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s1=new Student();
+		s1.printdetails();
+		s1.calcper();
+	
+
+	}
+
+}
