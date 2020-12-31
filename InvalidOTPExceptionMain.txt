@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class OtpChecking {
+		public boolean CheckOTP(String otp) throws InvalidOTPException
+		{
+			if(!(otp.equals("7896") && otp.length()==4))
+				throw new InvalidOTPException("Invalid otp");
+			else
+				return true;
+					
+		}
+
+		public static void main(String[] args) {
+			OtpChecking o=new OtpChecking();
+			Scanner s=new Scanner(System.in);
+			int i=1;
+	        while(i<=3)
+	        {
+	        	System.out.println("Enter OTP");
+	    		String otp=s.next();
+	    		
+	        	try {
+					if(o.CheckOTP(otp))
+					{
+						System.out.println("correct otp");
+						break;
+					}
+					else 
+						continue;
+					
+				} catch (InvalidOTPException e) {
+					
+					e.printStackTrace();
+				}
+	        	i++;
+	        }
+	        s.close();
+		}
+
+
+}
