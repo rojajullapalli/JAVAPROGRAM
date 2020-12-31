@@ -1,0 +1,25 @@
+public class LocalTaxableWorker extends StateTaxableWorker{
+	public String cityname;
+	public double citytaxrate;
+	
+	public LocalTaxableWorker(String name, double hourpay, double federaltaxrate, double grosspay, double statetaxrate,
+			String statename, String cityname, double citytaxrate) {
+		super(name, hourpay, federaltaxrate, grosspay, statetaxrate, statename);
+		this.cityname = cityname;
+		this.citytaxrate = citytaxrate;
+	}
+	
+	@Override
+	public String toString() {
+		return "LocalTaxableWorker [cityname=" + cityname + ", citytaxrate=" + citytaxrate + ", statetaxrate="
+				+ statetaxrate + ", Statename=" + Statename + ", name=" + name + ", hourpay=" + hourpay
+				+ ", federaltaxrate=" + federaltaxrate + ", grosspay=" + grosspay + ", tax=" + tax + "]";
+	}
+
+	@Override
+	public double grosspay() {
+		grosspay=grosspay*citytaxrate;
+		return grosspay;
+	}
+
+}
