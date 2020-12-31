@@ -1,0 +1,21 @@
+import java.util.TreeSet;
+
+public class NameSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<String> set=new TreeSet<String>();
+		set.add("snand");
+		set.add("jacob");
+		set.add("ian somerhandler");
+		set.add("paul welsely");
+		set.add("nina dobrev"); 
+		System.out.println(set);//ascending order
+		System.out.println(set.first());
+		System.out.println(set.last());
+		System.out.println(set.descendingSet());
+		
+
+	}
+
+}
