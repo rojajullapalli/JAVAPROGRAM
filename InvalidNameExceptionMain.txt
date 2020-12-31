@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class TestName {
+	
+	public boolean isvalid(String name) throws InvalidNameException {
+		for(int i=0;i<name.length();i++) {
+			char ch=name.charAt(i);
+			System.out.println(ch);
+		if(!((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))) {
+			throw new InvalidNameException("cannot have numbers and spl characters");
+	}
+		}
+		return true;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TestName t1=new TestName();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter your name");
+		String name=sc.next();
+		try {
+			if(t1.isvalid(name))
+				System.out.println("correct name");
+		} catch (InvalidNameException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
