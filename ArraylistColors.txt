@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class ArrColors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> color = new ArrayList<String>();
+	     color.add("red");     
+	     color.add("white");     
+	     color.add("black");    
+	     color.add("yellow");    
+	     color.add("blue");
+	     System.out.println(color);
+	     Iterator i = color.listIterator();
+	     while(i.hasNext())
+	    	 System.out.println(i.next());   
+	     color.set(0,"green");
+		    System.out.println("change element in index pos "+color);
+		    System.out.println(color.get(2));
+		    color.set(3, "pink");
+		    System.out.println("change element in index pos 3"+color);
+		    color.remove(3);
+		    System.out.println("remove an element " +color);
+		    if(color.contains("green"))
+		    	System.out.println("contains color");
+		    else
+		    	System.out.println("doesnot contains color");
+		    color.sort(null);
+		    System.out.println("to sort array "+color);
+		    ArrayList<String> color2 = new ArrayList<String>();
+		    color2.add("rose");
+		    color2.add("skyblue");
+		    color2.add("orange");
+		    color2.add("saffron");
+		    Collections.copy(color2, color);
+		    System.out.println("copy elements one arraylist to another "+color2);
+		    Collections.shuffle(color2);
+		    System.out.println("shuffle elements in a array list "+color2);
+		    Collections.reverse(color2);
+		    System.out.println("reverse elements in a array list "+color2);
+		    ArrayList<String> color3 = new ArrayList<String>();
+	          for (String e : color)
+	             color3.add(color2.contains(e) ? "Yes" : "No");
+	          System.out.println("compare two arrays"+color3);
+	          color3.removeAll(color3);
+	          System.out.println("remove all "+color3);
+	          System.out.println("Checking the above array list is empty or not! "+color3.isEmpty());
+		     
+	}
+
+}
