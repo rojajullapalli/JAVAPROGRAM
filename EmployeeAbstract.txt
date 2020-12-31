@@ -1,0 +1,6 @@
+public class Employee {
+	public String name="bob";
+	public int sal=150000;
+	public int total_sal;
+	public int ins=1456;
+}
