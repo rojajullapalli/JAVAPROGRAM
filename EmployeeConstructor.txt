@@ -1,0 +1,58 @@
+public class EmployeeConst {
+	int empid;
+	String empname;
+	float basicsal;
+	float insectives;
+	int deductives;
+public EmployeeConst() {
+	super();
+}
+	public EmployeeConst(int empid, String empname, float basicsal, float insectives, int deductives) {
+	super();
+	this.empid = empid;
+	this.empname = empname;
+	this.basicsal = basicsal;
+	this.insectives = insectives;
+	this.deductives = deductives;
+}
+	public EmployeeConst(int empid, String empname, float basicsal, int deductives) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+		this.basicsal = basicsal;
+		this.deductives = deductives;
+	}
+	
+	public EmployeeConst(int empid, String empname, float basicsal, float insectives) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+		this.basicsal = basicsal;
+		this.insectives = insectives;
+	}
+	public float calctax(){
+		  float tax=(basicsal+insectives-deductives)/10;
+		  return tax;
+		 //System.out.println("the tax is " +tax);
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EmployeeConst a1=new EmployeeConst();
+		EmployeeConst a2=new EmployeeConst(200,"tob",12345,1432,345);
+		EmployeeConst a3=new EmployeeConst(300,"hob",1456f,456);
+		EmployeeConst a4=new EmployeeConst(400,"hel",56789f,876f);
+		
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(a3);
+		System.out.println(a4);
+		a2.calctax();
+	}
+	@Override
+	public String toString() {
+		return "EmployeeConst [empid=" + empid + ", empname=" + empname + ", basicsal=" + basicsal + ", insectives="
+				+ insectives + ", deductives=" + deductives + "]";
+	}
+}
