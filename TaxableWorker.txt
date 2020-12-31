@@ -1,0 +1,27 @@
+public class TaxableWorker {
+	public String name;
+	public double hourpay;
+	public double federaltaxrate;
+	public double grosspay;
+	public double tax;
+	
+	
+	public TaxableWorker(String name, double hourpay2, double federaltaxrate2, double grosspay2) {
+		super();
+		this.name = name;
+		this.hourpay = hourpay2;
+		this.federaltaxrate = federaltaxrate2;
+		this.grosspay = grosspay2;
+	}
+	@Override
+	public String toString() {
+		return "TaxableWorker [name=" + name + ", hourpay=" + hourpay + ", federaltaxrate=" + federaltaxrate + "]";
+	}
+	public double grosspay() {
+		return 0;
+	}
+	public double tax() {
+	 tax=(grosspay*federaltaxrate);
+	 return tax;
+	}
+}
