@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class GuessingNum{
+	    public static void main(String args[]) 
+	    { 
+	      int no,guess,cnt=1;
+	      no=(int)Math.random();
+	      Scanner s=new Scanner(System.in);
+	      while(true)
+	      {
+	    	  System.out.println("enter your guess");
+	    	  guess=s.nextInt();
+	    	  if(no==guess)
+	    		  break;
+	    	  else if(no>guess)
+	    		  System.out.println("your guess is small");
+	    	  else if(no<guess)
+	    		  System.out.println("your guess is large");
+	    	  cnt++;
+	    	  
+	      }
+	      System.out.println("you guessed correct in your count" +cnt);
+	    	  
+	    } 
+	} 
+
+
