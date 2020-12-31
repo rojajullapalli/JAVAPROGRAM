@@ -1,0 +1,23 @@
+public class SUV implements vechile {
+	public String mfgrsname;
+	public int price;
+	public int year;
+	
+	public SUV(String mfgrsname, int price, int year) {
+		super();
+		this.mfgrsname = mfgrsname;
+		this.price = price;
+		this.year = year;
+	}
+	
+	@Override
+	public String toString() {
+		return "SUV [mfgrsname=" + mfgrsname + ", price=" + price + ", year=" + year + "]";
+	}
+
+	@Override
+	public void printdata() {
+		System.out.println(toString());
+	}
+
+}
