@@ -1,0 +1,14 @@
+public class ValidateNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//10 dig mob number
+		String ch="919786162123";
+		String regEX="^\\d{10}$";
+		String mno="(91)?[0-9]{12}";
+		System.out.println(ch.matches(regEX));
+		System.out.println(ch.matches(mno));
+
+	}
+
+}
