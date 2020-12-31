@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Age {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter age");
+		age=sc.nextInt();
+		try {
+			if(age<0)
+				throw new ArithmeticException();
+			else
+				System.out.println("Age is valid");
+		}
+		catch(ArithmeticException e) {
+			System.err.println("age should be positive");
+		}
+
+	}
+	
