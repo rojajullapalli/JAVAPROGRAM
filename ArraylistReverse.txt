@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Collections;
+public class ArrListRev {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> al = new ArrayList<String>();
+	     al.add("bhava");     
+	     al.add("raja");     
+	     al.add("sheshu");    
+	     al.add("jogi");    
+	     al.add("shyama");
+	     System.out.println(al);
+	     al.sort(null);
+	     System.out.println(al);
+	   Collections.reverse(al);
+	   System.out.println(al);
+
+	}
+
+}
