@@ -1,0 +1,19 @@
+public class StringBasic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="chennai";
+		String s2="chennai";
+		String s3="chennai";
+		String s4="tamilnadu ";
+		String s5=new String("chennai");
+		System.out.println(s1);
+		s1=s1.concat("tamil nadu ");
+		System.out.println(s1);
+		s4=s4.concat("thiruvallur");
+		System.out.println(s4);
+		System.out.println(s2);
+
+	}
+
+}
