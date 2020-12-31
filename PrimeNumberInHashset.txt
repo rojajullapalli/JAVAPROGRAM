@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class PrimeNumber {
+private ArrayList<Integer> list;
+	public ArrayList<Integer> saveEvenNum(int N) {
+		list = new ArrayList<Integer>();
+		
+		for (int i = 2; i <= N; ) {
+			list.add(i);
+			i=i+2;
+		}
+		return list;
+	}
+	public ArrayList<Integer> printEvenNum() {
+		ArrayList<Integer> newList = new ArrayList<Integer>();
+		for (int item : list) {
+			newList.add(item);
+			System.out.println(item * 2);
+		}
+		return newList;
+	}
+	public int Printeven(int no) {
+		if(list.contains(no))
+			return no;
+		else
+			return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PrimeNumber p1=new PrimeNumber();
+		p1.saveEvenNum(10);
+		p1.printEvenNum();
+		System.out.println(p1.Printeven(6));
+	}
+
+}
