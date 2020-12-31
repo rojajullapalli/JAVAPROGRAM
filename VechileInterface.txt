@@ -1,0 +1,3 @@
+public interface vechile {
+	public void printdata();
+}
