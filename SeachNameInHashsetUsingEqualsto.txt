@@ -1,0 +1,22 @@
+import java.util.HashSet;
+
+public class NewName {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+HashSet<String> set=new HashSet<String>();
+		
+		set.add("roshi");
+		set.add("yamini");
+		set.add("srividya");
+		set.add("praveena");
+		set.add("roja");
+		System.out.println(set);
+		for(String name:set) {
+		if(name.equals("roja"))
+			System.out.println("the given set has name "+name);
+		}
+		
+	}
+
+}
