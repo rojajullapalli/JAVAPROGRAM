@@ -1,0 +1,22 @@
+import java.util.TreeSet;
+
+public class BasicSortSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Integer> set=new TreeSet<Integer>();
+		Integer i=new Integer(100);
+		set.add(Integer.valueOf(10));
+		set.add(50);
+		set.add(500);
+		set.add(24);
+		set.add(67);
+		System.out.println(set);//ascending order
+		System.out.println(set.first());
+		System.out.println(set.last());
+		System.out.println(set.descendingSet());
+		
+
+	}
+
+}
