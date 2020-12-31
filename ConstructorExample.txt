@@ -1,0 +1,59 @@
+public class ConsOverload {
+	int rollno;
+	float perc;
+	String name;
+	boolean pass;
+	
+
+	public ConsOverload() {
+		super();
+	}
+	
+	public ConsOverload(String name) {
+		super();
+		this.name = name;
+	}
+
+	public ConsOverload(int rollno, String name) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+	}
+	
+
+	public ConsOverload(int rollno, float perc, String name, boolean pass) {
+		super();
+		this.rollno = rollno;
+		this.perc = perc;
+		this.name = name;
+		this.pass = pass;
+	}
+
+	public void dispdetails() {
+		System.out.println(rollno + " " + perc + " " +name);
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsOverload a1=new ConsOverload();
+		ConsOverload a2=new ConsOverload(200,"tob");
+		ConsOverload a3=new ConsOverload("hob");
+		ConsOverload a4=new ConsOverload(101,67.56f,"tom",true);
+		
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(a3);
+		System.out.println(a4);
+		
+	}
+
+	@Override
+	public String toString() {
+		return "ConsOverload [rollno=" + rollno + ", perc=" + perc + ", name=" + name + ", pass=" + pass + "]";
+	}
+	
+
+
+
+}
