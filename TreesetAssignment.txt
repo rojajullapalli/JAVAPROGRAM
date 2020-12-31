@@ -1,0 +1,44 @@
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetTask {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<String> color = new TreeSet<String>();
+	     color.add("red");     
+	     color.add("white");     
+	     color.add("black");    
+	     color.add("yellow");    
+	     color.add("blue");
+	     System.out.println(color);
+	     Iterator<String> i = color.iterator();
+	     while(i.hasNext())
+	    	 System.out.println(i.next());
+	     TreeSet<String> color1 = new TreeSet<String>();
+	     color1.add("Pink");
+	     color1.add("rose");
+	     color1.add("skyblue");
+	     System.out.println("Tree set2: "+color1);
+	      color.addAll(color1);
+	      System.out.println("Tree set1: "+color);
+	      System.out.println(color.descendingSet());//to reverse
+	      Object first_element = color.first();
+	      System.out.println("First Element is: "+first_element);
+	      Object last_element = color.first();
+	      System.out.println("First Element is: "+last_element);
+	      TreeSet<String> cloned = (TreeSet<String>)color.clone();
+          System.out.println("Cloned tree list: " + color); 
+          System.out.println("Size of the Tree Set: " + color.size());
+          color.remove("blue");
+          System.out.println("the removed element after set is "+color);
+          color.pollFirst();
+          System.out.println("after removing of first element "+color);
+          color.pollLast();
+          System.out.println("after removing of last element "+color);
+          
+	}
+
+}
