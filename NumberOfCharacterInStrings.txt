@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class NoofChar {
+	    public static void main(String[] args) {   
+	    	Scanner s1=new Scanner(System.in);
+	    	System.out.println("enter the characters to count");
+	    	String string=s1.nextLine();
+	        int count = 0;  
+	        for(int i = 0; i < string.length(); i++) {  
+	            if(string.charAt(i) != ' ')  
+	                count++;  
+	        }  
+	        System.out.println("Total number of characters in a string: " + count);  
+	        s1.close();
+	    }  
+	 
+	
+
+}
