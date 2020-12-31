@@ -1,0 +1,13 @@
+public class LastTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StateTaxableWorker s1=new StateTaxableWorker("prabha", 12.50, 0.25, 7.5, 0.05, "thiruvallur");
+		System.out.println(s1);
+		LocalTaxableWorker l1=new LocalTaxableWorker("thulasi", 12.50, 0.25, 7.5, 0.05, "thiruvallur", "chennai", 0.025);
+		System.out.println(l1);
+		System.out.println("the grosspay for state is "+s1.grosspay());
+		System.out.println("the grosspay for local is "+l1.grosspay());
+	}
+
+}
