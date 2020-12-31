@@ -1,0 +1,22 @@
+import java.util.HashSet;
+
+public class Basic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Object> set=new HashSet<>();
+		set.add(Integer.valueOf(10));
+		set.add(Float.valueOf(10.5f));
+		set.add(Character.valueOf('c'));
+		set.add(20);
+		set.add(23.56);
+		set.add("chennai");
+		set.add(10);
+		set.add(20);
+		set.add(null);
+		System.out.println("set is " +set);
+		
+
+	}
+
+}
