@@ -1,0 +1,20 @@
+public class VariablesExample {
+	static int a;
+	int no=20;
+	public void test()
+	{
+		int x=50;
+		System.out.println(+x);
+		System.out.println(+no);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("static " +a);
+		VariablesExample v1=new VariablesExample();
+		System.out.println("instance " +v1.no);
+		//System.out.println("local" +v1.test().x);
+
+	}
+
+}
