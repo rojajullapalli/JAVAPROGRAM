@@ -1,0 +1,31 @@
+public class Employee {
+	static int empid;
+	static int empsal;
+	public void calcTax() {
+		int tax=empsal/10;
+		System.out.println("the tax is "+tax);
+		
+	}
+	public void printdetails()
+	{
+		System.out.println("employee id is " +empid);
+		System.out.println("employee salary is " +empsal);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1=new Employee();
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter empid");
+		empid=s.nextInt();
+		System.out.println("enter employee salary");
+		empsal=s.nextInt();
+		e1.printdetails();
+		e1.calcTax();
+	    s.close();
+		
+		
+
+	}
+
+}
