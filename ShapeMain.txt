@@ -1,0 +1,17 @@
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle c1=new Circle("circle",7);
+		System.out.println(c1);
+		System.out.println("area of circle "+c1.area());
+		System.out.println("perimeter of circle" +c1.perimeter());
+		Rectangle r1=new Rectangle("rectangle",6,6);
+		System.out.println(r1);
+		System.out.println("area of rectangle is "+r1.area());
+		System.out.println("perimeter of rectangle "+r1.perimeter());
+		
+
+	}
+
+}
