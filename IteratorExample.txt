@@ -1,0 +1,23 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class IteratorEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> set=new HashSet<Integer>();
+		Integer i=new Integer(100);
+		set.add(Integer.valueOf(10));
+		set.add(50);
+		set.add(500);
+		set.add(24);
+		//set.add(23.6);
+		//set.add("cg");
+		set.add(67);
+		Iterator<Integer> x=set.iterator();
+		while(x.hasNext()) {
+			System.out.println(x.next());
+		}
+		
+
+	}
